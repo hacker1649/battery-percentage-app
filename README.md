@@ -2,7 +2,13 @@
 
 A new Flutter project.
 
-## Getting Started
+## Calling platform-specific code using platform channels
+
+The following code demonstrates how to call a platform-specific API to retrieve and display the current battery level. It uses the Android BatteryManager API, the iOS device.batteryLevel API, the Windows GetSystemPowerStatus API, and the Linux UPower API with a single platform message, getBatteryLevel().
+
+The example adds the platform-specific code inside the main app itself. If you want to reuse the platform-specific code for multiple apps, the project creation step is slightly different (see [developing packages](https://docs.flutter.dev/packages-and-plugins/developing-packages#plugin)), but the platform channel code is still written in the same way.
+
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
